@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <script>
+    // if (Tabuada > 0 && Tabuada <= 10) {
+    //   console.log(" Tabuada do " + Tabuada);
+    //   document.write(" Tabuada do " + Tabuada + " até " + Multiplicador+"<br/>" + "<br/>");
+
+    //   for (let index = 0; index <= Multiplicador; index++) {
+    //     console.log(Tabuada + " vezes " + index + " igual " + Tabuada * index)
+    //     document.write(Tabuada + " vezes " + index + " igual " + Tabuada * index + "<br/>")
+
+    //   }
+    // } else {
+    //   alert("Dados Inválidos!")
+    // }
+
+    // let Tabuada1 = prompt("Digite a tabuada de início:")
+    // let Tabuada2 = prompt("Digite a tabuada do final:")
+
+    // for (Tabuada1; Tabuada1 <= Tabuada2; Tabuada1++) {
+    //   for (let i = 0; i <= 10; i++) {
+    //     console.log(Tabuada1 + "X" + i + "=" + Tabuada1 * i)
+    //   }
+    // }
+
+
+    let tabuada = prompt("Digite os valores separados por (;)")
+    tabuada = tabuada.split(";");
+
+    tabuada.forEach(element => {
+      for (let i = 0; i<=10; i++){
+        console.log(element + "X" + i + "=" + element * i)
+      }
+    });
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
