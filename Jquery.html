@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script>
+        function calcular() {
+            const tab = $("#tabuada").val();
+            $("#tabuadaSelecionada").text("Tabuada: " + tab);
+
+            let result = "";
+            for (let index = 1; index <=10; index++){
+                result += `<div> ${tab} X ${index} = ${tab*index}</div>`
+            }
+            $("#tabuadaResultado").text(" ");
+            $(result).appendTo("#tabuadaResultado");
+            
+
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <label>
+            Tabuada
+            <input id="tabuada" type="text" placeholder="Digite o número da tabuada">
+
+        </label>
+        <button onclick="calcular()">Calcular</button>
+    </div>
+    <div id="containerTabuada">
+        <span id="tabuadaSelecionada"></span>
+<br>
+        <span id="tabuadaResultado"></span>
+    </div>
+</body>
+
+</html>
