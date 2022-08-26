@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Janela</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <link href="css/sistemaJanela.css" type="text/css" rel="stylesheet" />
+    <script src="js/sistemaJanela.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <main>
+        <div id="menu-ativo">
+            <span class="itens-menu-ativo">Tabuada</span>
+            <span class="itens-menu-ativo">IMC</span>
+            <span class="itens-menu-ativo">Calculadora</span>
+        </div>
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div id="menu">
+            <span id="start" onclick=start()>Iniciar</span>
+        </div>
+        <div id="icones">
+            <span id="icones">Icones</span>
+        </div>
+        <div id="utilitario">
+            <span id="relogio">Utilitário</span>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $("#menu-ativo").hide();
+
+    setInterval(function(){
+        $("#relogio").text((new Date).toLocaleTimeString())
+    }, 10);
+</script>
+
+</html>

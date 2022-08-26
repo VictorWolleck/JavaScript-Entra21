@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+
+}
+
+body {
+    background: #ccc url("../img/plano-de-fundo.jpg") no-repeat right top fixed;
+}
+
+footer {
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 130px auto 130px;
+}
+
+#menu #start {
+    display: flex;
+    width: 100px;
+    background-color: #333;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#icones #icones {
+    display: flex;
+    width: 100px;
+    background-color: #333;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+
+#utilitario #relogio  {
+    display: flex;
+    width: 100px;
+    background-color: #333;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+
+#menu #start:hover,
+#icones #icones:hover,
+#utilitario #utilitario:hover {
+    background-color: #444;
+}
+
+#menu-ativo {
+    width: 260px;
+    height: 360px;
+    background-color: #222;
+    position: absolute;
+    top: auto;
+    bottom: 50px;
+    border-top-right-radius: ;
+}
+
+#menu-ativo .itens-menu-ativo{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+
+}
